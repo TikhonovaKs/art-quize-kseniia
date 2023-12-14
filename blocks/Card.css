@@ -1,0 +1,40 @@
+.card {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  background-color: white;
+  border: 1px solid #5f6368;
+}
+
+.card__image-container {
+  height: 300px;
+  overflow: hidden;
+}
+
+@media (min-width: 780px) {
+  .card__image-container {
+    height: 300px;
+  }
+}
+
+.card__image {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  padding: 10px;
+}
+
+.card__author {
+  align-self: center;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: normal;
+  padding: 15px 0;
+  border-top: 1px solid #5f6368;
+}
+
+@media (min-width: 1280px) {
+  .card__author {
+    font-size: 20px;
+  }
+}

@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Art-quize</title>
+    <link rel="stylesheet" href="pages/index.css" />
+  </head>
+
+  <body class="page">
+    <header class="header">
+      <div class="header__logo-container">
+        <img class="header__logo" src="./images/logo.png" alt="logo" />
+        <h1 class="header__title">Masterpiece Matchup</h1>
+      </div>
+      <img src="./images/info_logo.png" alt="" class="header__info-logo" id="button-start" />
+    </header>
+    <main class="main">
+      <div class="player">
+        <p class="player__info" id="player-name"></p>
+        <p class="player__info" id="player-round"></p>
+        <p class="player__info" id="player-score"></p>
+      </div>
+
+      <h3 class="title__artist"></h3>
+      <template id="card-template">
+        <div class="card">
+          <div class="card__image-container">
+            <img class="card__image" src="#" alt="#" />
+          </div>
+        </div>
+      </template>
+      <section class="gallery">
+      </section>
+    </main>
+
+    <div class="popup popup_type_instructions">
+      <div class="popup__container popup__container-big">
+        <h2 class="popup__title">How to play</h2>
+        <p id="info__instruction" class="popup__instruction">
+          Get ready to test your art knowledge in five exciting rounds, each featuring three works of art. Before we
+          dive in, familiarize yourself with 15 works and their respective artists. Now, it's time to put your memory to
+          the test! In each round, we'll present you with three artworks, and your mission is to correctly match a
+          artist with its corresponding artwork.
+        </p>
+        <button id="close_btn" class="button">All clear</button>
+      </div>
+    </div>
+
+    <div class="popup popup_type_result">
+      <div class="popup__container">
+        <h2 id="result-message" class="popup__title">Not correct</h2>
+        <p id="right-answer" class="popup__instruction">Right answer is</p>
+        <button id="close_btn" class="button button_border-yellow">Ok</button>
+      </div>
+    </div>
+
+    <div class="popup popup_type_feedback">
+      <div class="popup__container">
+        <h2 class="popup__title" id="feedback-title">How to play</h2>
+        <p id="feedback-massage" class="popup__instruction">How to play</p>
+        <button id="newgame-button" class="button button_border-blue">New game</button>
+        <button id="mainpage-button" class="button button_border-yellow">Main page</button>
+      </div>
+    </div>
+
+    <script src="./pages/game.js"></script>
+  </body>
+</html>

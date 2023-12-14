@@ -1,0 +1,77 @@
+.footer {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  position: relative;
+  max-width: 1480px;
+  background-color: #2a2c2f;
+  margin-left: auto;
+  margin-right: auto;
+  color: white;
+  overflow: hidden;
+  margin-top: 70px;
+  padding-bottom: 20px;
+  padding-left: 10px;
+}
+
+@media (min-width: 1280px) {
+  .footer {
+    margin-top: 150px;
+  }
+}
+
+.footer__info {
+  font-size: 24px;
+  padding: 20px;
+  z-index: 2;
+  margin-top: -5px;
+}
+
+.footer__triangle {
+  position: absolute;
+  background-image: url(../images/kaufman-triangle.svg);
+  width: 400px;
+  height: 400px;
+  top: 0;
+  right: -110px;
+  background-size: cover;
+  z-index: 1;
+}
+
+.footer__content {
+  position: relative;
+  z-index: 2;
+}
+
+.footer__names {
+  display: grid;
+  row-gap: 5px;
+  padding-left: 20px;
+  list-style-type: none;
+  z-index: 2;
+}
+
+.footer__api-link {
+  color: azure;
+  margin-left: 20px;
+  z-index: 2;
+  margin-top: 45px;
+  text-decoration: none;
+  border-bottom: 0.5px solid azure;
+  font-size: 12px;
+  width: 230px;
+  padding-bottom: 2px;
+  cursor: pointer;
+}
+
+@media (min-width: 400px) {
+  .footer__api-link {
+    font-size: 16px;
+    width: 310px;
+  }
+}
+
+.footer__api-link:hover {
+  opacity: 80%;
+  transition: 0.25s ease-in-out;
+}

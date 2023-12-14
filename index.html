@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Agbalumo&family=Bebas+Neue&family=Montserrat:wght@200;400;500;700&family=Open+Sans&display=swap"
+      rel="stylesheet"
+    />
+    <title>Art-quize</title>
+    <link rel="stylesheet" href="pages/index.css" />
+  </head>
+  <body class="page">
+    <header class="header">
+      <div class="header__logo-container">
+        <img class="header__logo" src="./images/logo.png" alt="logo" />
+        <h1 class="header__title">Masterpiece Matchup</h1>
+      </div>
+    </header>
+    <main class="main">
+      <section class="info">
+        <h3 class="info__title">The rules</h3>
+        <ul class="info__instruction-container">
+          <li class="info__instruction">Press the "Start" button and enter your name.</li>
+          <li class="info__instruction">
+            15 art objects will automatically appear in front of you. You have 12 seconds to remember which artist each
+            piece of art belongs to.
+          </li>
+          <li class="info__instruction">
+            After 12 seconds, the game will begin: 5 rounds, 3 artworks, and one artist in each round. Remember which
+            art belongs to the presented artist and click on that picture
+          </li>
+        </ul>
+      </section>
+      <button id="button-start" class="button">start</button>
+    </main>
+
+    <footer class="footer">
+      <p class="footer__info">Masterpiece Matchup</p>
+      <ul class="footer__names">
+        <li>Setayesh Nouri</li>
+        <li>Heidi Espiritu</li>
+        <li>Milla Linden</li>
+        <li>Kseniia Tikhonova</li>
+        <li>Niklas Wallenborg</li>
+      </ul>
+      <a class="footer__api-link" href="https://www.artic.edu/" target="_blank">Credits to: The Art Institute of Chicago</a>
+      <div class="footer__triangle rotation"></div>
+    </footer>
+
+    <div class="popup">
+      <div class="popup__container">
+        <button class="popup__button-close" aria-label="Close window button" type="button"></button>
+        <h2 class="popup__title">Enter your name</h2>
+        <form class="popup__form" novalidate>
+          <input
+            id="input-name"
+            minlength="2"
+            maxlength="30"
+            type="text"
+            name="name"
+            placeholder="name"
+            class="popup__input"
+            required
+          />
+          <span id="input-name"></span>
+          <button disabled id="button-send-name" type="submit" class="button button_disabled" aria-label="send">
+            Ok
+          </button>
+        </form>
+      </div>
+    </div>
+
+    <script src="./pages/index.js"></script>
+  </body>
+</html>
