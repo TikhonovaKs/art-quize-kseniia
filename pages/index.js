@@ -27,11 +27,13 @@ function setPopupButtonState(isValid) {
     sendNameButton.classList.add('button_disabled');
   }
 }
+
 addNameForm.addEventListener('input', function () {
   const isValid = nameInput.value.length > 0;
 
   setPopupButtonState(isValid);
 });
+
 addNameForm.addEventListener('submit', function (event) {
   event.preventDefault();
 
@@ -40,8 +42,7 @@ addNameForm.addEventListener('submit', function (event) {
   setPopupButtonState(false);
   addNameForm.reset();
   closePopup();
-
+  
   // Redirect to cards page
   window.location.href = 'cards.html';
 });
-

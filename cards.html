@@ -22,7 +22,6 @@
         <p class="player__info" id="player-score">Your art history ?</p>
       </div>
 
-      <!--timer-------Heidi---->
       <div class="countdown-timer-container">
         <div id="countdown-timer" style="display: none">
           <span id="countname">Timer:</span>
@@ -31,16 +30,20 @@
       </div>
 
       <h2 class="title">Try to remember the artists</h2>
+      
       <section class="gallery">
-        <template id="card-template">
-          <div class="card">
-            <div class="card__image-container">
-              <img class="card__image" src="./images/test-image.png" alt="#" />
-            </div>
-            <p class="card__author">monet</p>
-          </div>
-        </template>
+
       </section>
+
+      <template id="card-template">
+        <div class="card">
+          <div class="card__image-container">
+            <img class="card__image" src="./images/test-image.png" alt="#" />
+          </div>
+          <p class="card__author">monet</p>
+        </div>
+      </template>
+
     </main>
 
     <footer class="footer">
@@ -58,14 +61,12 @@
       <div class="footer__triangle rotation"></div>
     </footer>
 
-    <!---loader wrapper---Heidi-->
     <div id="loading-wrapper">
       <div id="loading-text">Fetching art..</div>
       <div id="loading-content"></div>
     </div>
 
     <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
-    <!--JQUERY library link needed-----Heidi-->
     <script src="./pages/cards.js"></script>
   </body>
 </html>

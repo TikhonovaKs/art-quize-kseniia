@@ -71,7 +71,7 @@ function renderCard(element) {
 }
 
 //-------------------------------------------------------------------------------------------------------------
-
+// variables with initial values
 let round = 0;
 let score = 0;
 let randomArtist = '';
@@ -97,7 +97,6 @@ function renderOneRoundCards() {
   // Get random artist of 3 cards and render this name
   const randomIndexCard = Math.floor(Math.random() * oneRoundCardsArray.length);
   randomArtist = oneRoundCardsArray[randomIndexCard].artist_title;
-  // const artisrElement = document.querySelector('.title__artist');
   artisrElement.textContent = randomArtist;
 
   // Render 3 cards
