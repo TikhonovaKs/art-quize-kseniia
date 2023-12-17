@@ -8,7 +8,7 @@ function createArtApi(config) {
     }
     return Promise.reject('An error has occurred');
   }
-
+ 
   function getArtObjects() {
     const TOTAL_PAGES = 33;
     const LIMIT_ARTS = 30;
@@ -130,6 +130,6 @@ function redirectToGamePage() {
 
 // ------Function to handle the countdown and redirect
 function countdownAndRedirect() {
-  const countdownDuration = 12;
+  const countdownDuration = 30;
   startCountdown(countdownDuration, redirectToGamePage);
 }
